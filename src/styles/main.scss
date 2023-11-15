@@ -1,0 +1,52 @@
+@use 'variables';
+@use 'hero';
+@use 'event';
+@use 'elements/infos_bar';
+@use 'elements/buttons';
+@use 'merchan';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+    font-style: italic;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+footer{
+    background-color: variables.$black1;
+    padding-bottom: 20px;
+    ul{
+        display:flex;
+        justify-content: center;
+
+        a{
+            font-size: 16px;
+            text-decoration: none;
+            margin-left: 30px;
+            margin-right: 30px;
+
+            &:hover{
+                color:variables.$pink1;
+            }
+        }
+    }
+}
